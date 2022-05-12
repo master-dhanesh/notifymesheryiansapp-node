@@ -1,0 +1,75 @@
+<%- include('./partials/header.ejs') %>
+ <!-- Navbar -->
+ <%- include('./partials/nav.ejs') %>
+
+ <!-- Landing -->
+ <div id="home" class="ai full-height fh">
+  <div class="bz">
+    <img src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/trees.jpg?100" alt="">
+  </div>
+  <div class="phone-preview-sizer">
+    <div class="phone-preview"></div>
+    <div class="image-container g" style="background-image:url('/images/landing1.png')"></div>
+    <div class="image-container" style="background-image:url('/images/landing2.png')"></div>
+  </div>
+  <div class="horizontal-half-wrapper he g">
+    <div class="header-background l"></div>
+    <div class="header-wrapper c valign-wrapper">
+      <div class="d iv kw offset-m2 ci">
+        <h1>Tell us!</h1>
+        <span class="dx">Just tell us the date-time, we never forget.</span>
+        <button class="read-more"><i class="icon-caret-down"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="horizontal-half-wrapper">
+    <div class="header-background l"></div>
+    <div class="header-wrapper c valign-wrapper">
+      <div class="d iv kw offset-m2 ci">
+        <h1>Auto wish</h1>
+        <span class="dx">We surprise your love ones. They'll get to know they're special to you.</span>
+        <button class="read-more"><i class="icon-caret-down"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Register -->
+<div id="register" class="v r valign-wrapper">
+  <div class="c ci">
+    <form action="/" method="POST" class="d iv jc offset-m1">
+      <div class="c">
+        <div class="d iv"><h2 class="section-title">Register Here...</h2></div>
+        <div class="input-field d ka">
+          <input id="username" name="username" type="text">
+          <label for="username">John Doe</label>
+        </div>
+        <div class="input-field d ka">
+          <input id="title" name="title" type="text">
+          <label for="title">Title Of Greeting...</label>
+        </div>
+        <div class="input-field d ka">
+          <input id="senderemail" name="senderemail" type="email">
+          <label for="senderemail">Sender Email</label>
+        </div>
+        <div class="input-field d ka">
+          <input id="receiveremail" name="receiveremail" type="email">
+          <label for="receiveremail">Reciever Email</label>
+        </div>
+        <div class="input-field d ka">
+          <input id="datetime" name="datetime" type="datetime-local">
+          <!-- <label for="datetime">Reciever Email</label> -->
+        </div>
+        <div class="input-field d iv">
+          <textarea name="message" id="message" class="materialize-textarea"></textarea>
+          <label for="message">Your Text Here...</label>
+          <button type="submit" class="waves-effect waves-light btn-large">Register Timer</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<%- include('./partials/footer.ejs') %>
+
+  
